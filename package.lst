@@ -37,6 +37,11 @@ wf-recorder
 celluloid
 
 
+# --------------------------------------------------- // Font
+ttf-jetbrains-mono-nerd
+noto-fonts-emoji
+
+
 # --------------------------------------------------- // Dependencies
 polkit-kde-agent                                       # authentication agent
 xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
