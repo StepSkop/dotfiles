@@ -70,6 +70,8 @@ zsh                                                    # zsh
 oh-my-zsh-git                                          # plugin manager for zsh
 starship                                               # customizable shell prompt
 neofetch                                               # fetch tool
+fzf                                                    # fuzzy finder
+zoxide                                                 # cd utility
 
 
 # --------------------------------------------------- // Hyprdots
