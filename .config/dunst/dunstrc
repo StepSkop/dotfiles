@@ -24,10 +24,10 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 400
+    width = 500
 
     # The maximum height of a single notification, excluding the frame.
-    height = 100
+    height = 400
 
     # Position the notification in the top right corner
     origin = top-right
@@ -92,7 +92,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 2
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
     #frame_color = "#eba0ac"
@@ -123,7 +123,7 @@
 
     ### Text ###
 
-    font = JetBrains Mono 8
+    font = JetBrains Mono 10
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -231,7 +231,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/rofi -dmenu -p dunst:
+    dmenu = /usr/bin/fuzzel -dmenu -p dunst:
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/xdg-open
@@ -471,11 +471,6 @@
     background = "#FFFFFF"
     icon = "~/.config/dunst/icons/slack.svg"
     urgency = normal
- # constant width of 300
-width = 400
-
-# The maximum height of a single notification, excluding the frame.
-height = 100
 
 [urgency_low]
     background = "#15152A"

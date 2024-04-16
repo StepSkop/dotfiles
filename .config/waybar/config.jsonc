@@ -6,7 +6,7 @@
     "layer": "top",
     "position": "bottom",
     "mod": "dock",
-    "height": 28,
+    "height": 32,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -139,7 +139,7 @@
 
 	"wlr/taskbar": {
 		"format": "{icon}",
-		"icon-size": 16,
+		"icon-size": 20,
 		"icon-theme": "kora",
         "spacing": 0,
 		"tooltip-format": "{title}",
@@ -159,7 +159,7 @@
     },
 
     "tray": {
-        "icon-size": 16,
+        "icon-size": 24,
         "spacing": 5
     },
 

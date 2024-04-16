@@ -3,8 +3,8 @@
     border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 10px;
-    min-height: 10px;
+    font-size: 12px;
+    min-height: 20px;
 }
 
 @import "themes/theme.css";
@@ -144,6 +144,15 @@ tooltip {
 	100% {
         color: rgb(207, 58, 75);
 	}
+}
+
+#battery.critical {
+    animation: pulse 2s infinite;
+}
+
+#battery.charging {
+    color: greenyellow;
+    animation: none;
 }
 
 #workspaces,

@@ -19,7 +19,15 @@ function send_notification {
     angle="$(((($brightness + 2) / 5) * 5))"
     ico="~/.config/dunst/icons/vol/vol-${angle}.svg"
     bar=$(seq -s "." $(($brightness / 15)) | sed 's/[0-9]//g')
-    dunstify "t2" -i $ico -a "$brightness$bar" "$brightinfo" -r 91190 -t 800
+    dunstify "t2" -i $ico -a "$brightness$bar" "Brightness" -r 91190 -t 800
+}
+
+function send_kbd_backlight_notification {
+    brightness=`brightnessctl -d asus::kbd_backlight info | grep -oP "(?<=\()\d+(?=%)" | cat`
+    angle="$(((($brightness + 2) / 5) * 5))"
+    ico="~/.config/dunst/icons/vol/vol-${angle}.svg"
+    bar=$(seq -s "." $(($brightness / 15)) | sed 's/[0-9]//g')
+    dunstify "t2" -i $ico -a "$brightness$bar" "Keyboard Backlight" -r 91190 -t 800
 }
 
 function get_brightness {
@@ -48,6 +56,12 @@ d)  # decrease the backlight
         brightnessctl set 5%-
     fi
     send_notification ;;
+ki)
+    brightnessctl -d asus::kbd_backlight set +1
+    send_kbd_backlight_notification ;;
+kd)
+    brightnessctl -d asus::kbd_backlight set 1- 
+    send_kbd_backlight_notification ;;
 *)  # print error
     print_error ;;
 esac

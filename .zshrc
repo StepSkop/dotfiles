@@ -127,6 +127,9 @@ alias cdsk='cd ~/Desktop'
 #ip
 alias ip='ip --color=auto'
 
+#VScode on Wayland
+alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+
 #Haxagon
 alias haxagon-vpn='wg-quick up wg0'
 alias haxagoff-vpn='wg-quick down wg0'
