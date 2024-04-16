@@ -32,3 +32,8 @@ qt5ct.conf <br>
 qt6ct.conf <br>
 kvantum.kvconfig <br>
 hypr/themes/theme.conf <br>
+
+## GNU Stow
+```bash
+stow --adopt .
+```
