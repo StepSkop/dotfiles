@@ -467,10 +467,8 @@
     timeout = 4
 
 [slack]
-    appname = Slack
-    background = "#FFFFFF"
-    icon = "~/.config/dunst/icons/slack.svg"
-    urgency = normal
+    desktop_entry = "Slack"
+    new_icon = "~/.config/dunst/icons/slack.svg"
 
 [urgency_low]
     background = "#15152A"

@@ -11,7 +11,7 @@ then
     if [ ! -d "$savePath/$(date +'%d-%m-%Y')" ]; then
       mkdir -p "$savePath/$(date +'%d-%m-%Y')"
     fi
-    timeout 6000 wf-recorder -f $HOME/Videos/Captures/$(date +'%d-%m-%Y')/$(date +'Screen_recording_%H%M.mp4') -g "$dimensions" || exit
+    timeout 6000 wf-recorder -r 60 -f $HOME/Videos/Captures/$(date +'%d-%m-%Y')/$(date +'Screen_recording_%H%M.mp4') -g "$dimensions" || exit
   fi
 else 
   pkill --signal SIGINT wf-recorder
