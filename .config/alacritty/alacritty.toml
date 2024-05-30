@@ -14,3 +14,9 @@ vi_mode_style={shape="Beam",blinking="On"}
 [font]
 normal={family="JetBrainsMono Nerd Font", style="Regular"}
 size=12
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Control"
+chars =  "\u0017"
+
