@@ -89,11 +89,21 @@ function in {
     fi
 }
 
+# 42 Prague
+USER_42="sskopek"
+export USER_42
+MAIL_42="sskopek@student.42prague.com"
+export MAIL_42
+alias cdebug='f() {cc -Wall -Werror -Wextra $1 && ./a.out; rm a.out};f'
+
 # Helpful aliases
 alias  l='eza -lh  --icons=auto' # long list
-alias ls='eza -1   --icons=auto' # short list
+#alias ls='eza -1   --icons=auto' # short list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
+
+alias cat='bat'
+
 alias un='$aurhelper -Rns' # uninstall package
 alias up='$aurhelper -Syu' # update system/package/aur
 alias pl='$aurhelper -Qs' # list installed package
@@ -181,7 +191,8 @@ eval "$(zoxide init --cmd cd zsh)"
 #starship
 eval "$(starship init zsh)"
 
-#console ninja
+#ohmyposh
+#eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/base.json)"
 
 
 #nvm
@@ -191,3 +202,6 @@ export NVM_DIR="$HOME/.nvm"
 
 #android-sdk
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
+
+# Created by `pipx` on 2024-06-05 13:54:53
+export PATH="$PATH:/home/steps/.local/bin"
