@@ -23,7 +23,7 @@ while true; do
             fi
         fi
     done
-    if [ $bat_lvl -le 33 ]; then
+    if [ $bat_lvl -le 5 ]; then
 	    if [ $final_dialog -eq 0 ]; then
 			if [ $ac_status -eq 0 ]; then
 		    	final_dialog=1
