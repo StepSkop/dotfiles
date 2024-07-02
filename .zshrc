@@ -96,6 +96,8 @@ MAIL_42="sskopek@student.42prague.com"
 export MAIL_42
 alias cdebug='f() {cc -Wall -Werror -Wextra $1 && ./a.out; rm a.out};f'
 
+export BROWSER=/usr/bin/thorium-browser
+
 # Helpful aliases
 alias  l='eza -lh  --icons=auto' # long list
 #alias ls='eza -1   --icons=auto' # short list
@@ -205,3 +207,10 @@ export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 
 # Created by `pipx` on 2024-06-05 13:54:53
 export PATH="$PATH:/home/steps/.local/bin"
+
+# bun completions
+[ -s "/home/steps/.bun/_bun" ] && source "/home/steps/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
